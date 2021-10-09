@@ -1,28 +1,15 @@
 [
-
     {
-
         "squadra1": "Lazio",
-
         "squadra2": "Inter",
-
         "golSquadra1": 1,
-
-        "golSquadra2": 1,
-
-
-
+        "golSquadra2": 1
     },
-
     {
-
         "squadra1": "Roma",
-
         "squadra2": "Empoli",
-
         "golSquadra1": 2,
-
-        "golSquadra2": 0,
-
+        "golSquadra2": 0
     }
-    ]
+]
+

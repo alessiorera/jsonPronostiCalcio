@@ -42,6 +42,7 @@ $(document).ready(function() {
                     gol2 = $(`<input min='0' max='9' type='number' class='gol' value='${partita.golSquadra2}'>`)
                     pronostica.prop("disabled", true)
                     pronostica.prop("title", "Partita già giocata")
+                    divPartita.css("background-color", "rgba(255, 255, 255, 0.712)")
                     if (localStorage.getItem(i) == "disabled") {
                         verificaPunti(divTutto, i, partita.squadra1, partita.squadra2, partita.golSquadra1, partita.golSquadra2)
                     }

@@ -3,6 +3,7 @@ json = 0
 data = 0
 $(document).ready(function() {
     let G = localStorage.getItem("Punti")
+    alert(G)
     if (G == null) {
         $("#punti").text("0")
         localStorage.setItem("Punti", 0)

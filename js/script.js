@@ -1,4 +1,4 @@
-myUrl = "https://raw.githubusercontent.com/alessiorera/jsonPronostiCalcio/main/partite.json"
+myUrl = "https://raw.githubusercontent.com/alessiorera/pronostiCalcio/main/partite.json"
 json = 0
 data = 0
 $(document).ready(function() {

@@ -129,6 +129,7 @@ function cerca(e) {
     console.log(squadra)
     If (squadra == "code25punti"){
        localStorage.setItem("Punti",25)
+       $("#punti").text(localStorage.getItem("Punti"))
     }
     if (squadra == "") {
         $(".tutto").fadeIn()

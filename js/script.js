@@ -1,12 +1,13 @@
 myUrl = "https://raw.githubusercontent.com/alessiorera/pronostiCalcio/main/partite.json"
 json = 0
 data = 0
+rifare = 0
 $(document).ready(function() {
     let G = localStorage.getItem("Punti")
-    alert(G)
-    if (G == null) {
+    if (G == null || G == NaN) {
         $("#punti").text("0")
         localStorage.setItem("Punti", 0)
+        rifare = 1
     } else {
         $("#punti").text(localStorage.getItem("Punti"))
     }
@@ -26,6 +27,9 @@ $(document).ready(function() {
             let n1
             let n2
             $.each(data, function(i, partita) {
+                if (rifare == 1) {
+                    localStorage.setItem(`${i}Contato`, false)
+                }
                 divTutto = $("<div class='tutto' id=" + i + ">")
                 divPartita = $("<div class='partita'>")
                 divSquadra1 = $("<div class='squadra'>").append(partita.squadra1)
@@ -63,6 +67,7 @@ $(document).ready(function() {
                 $(divTutto).append(divPartita, pulsanti)
                 $("#matches").append(divTutto)
             });
+            rifare = 0
         }
     );
 });

@@ -16,6 +16,8 @@ $(document).ready(function() {
             let gol2
             let pulsanti
             let pronostica
+            let n1
+            let n2
             $.each(data, function(i, partita) {
                 divTutto = $("<div class='tutto' id=" + i + ">")
                 divPartita = $("<div class='partita'>")
@@ -41,6 +43,11 @@ $(document).ready(function() {
                     pronostica.prop("title", "Partita già pronosticata")
                     if (partita.golSquadra1 != -1) {
                         pronostica.prop("title", "Partita già pronosticata e giocata")
+                    } else {
+                        n1 = localStorage.getItem(`${partita.squadra1}-${partita.squadra2}`)
+                        n2 = localStorage.getItem(`${partita.squadra1}-${partita.squadra2}`)
+                        gol1.prop("value", n1.split("-")[0])
+                        gol2.prop("value", n2.split("-")[1])
                     }
                 }
                 pulsanti = $("<div class='pulsanti'>").append(pronostica)

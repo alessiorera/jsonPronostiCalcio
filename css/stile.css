@@ -1,0 +1,194 @@
+body {
+    background-color: rgb(17, 17, 17);
+    background-image: url("../img/logoNeroBackground.png");
+    background-size: 40%;
+    font-family: "PT Sans", sans-serif!important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #cccccc;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 119, 0.712);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#puntiDiv {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 4px rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#punti {
+    font-weight: bold;
+}
+
+.cerca {
+    border: 2px solid rgba(0, 255, 119, 0.712);
+    margin: 10px;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+.cerca:hover {
+    background-color: rgba(0, 255, 119, 0.712);
+}
+
+.tutto {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.partita {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 255, 119, 0.712);
+    width: 100%;
+    padding: 5vw;
+    border-radius: 15px 15px 0px 15px;
+    overflow: auto;
+}
+
+.squadra {
+    font-size: 6vw;
+    font-weight: bold;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    overflow: auto;
+}
+
+.risultato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.trattino {
+    font-size: 6vw;
+}
+
+.gol {
+    border: none;
+    text-align: center;
+    color: rgba(0, 255, 119, 0.712);
+    font-weight: bold;
+    font-size: 7vw;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.risultato input {
+    width: 30%;
+    margin: 10px;
+}
+
+.pronostica {
+    background-color: black;
+    color: rgba(0, 255, 119, 0.712);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid rgba(0, 255, 119, 0.712);
+    padding: 5px;
+    border-radius: 0px 0px 15px 15px;
+    transition: color, background-color 250ms;
+    float: right;
+}
+
+.pronostica:hover {
+    color: black;
+    background-color: rgba(0, 255, 119, 0.712);
+    border: 1px solid black;
+}
+
+.pronostica:disabled {
+    background-color: grey;
+    color: black;
+    border: 1px solid black;
+}
+
+.pronostica:disabled:hover {
+    cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+    #matches {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: [first] 45% [line2] 45%;
+        column-gap: 30px;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .tutto {
+        width: 100%;
+        margin: auto;
+    }
+    .tutto div,
+    .tutto input {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 992px) {
+    #matches {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: [first] 30% [line2] 30% [line3] 30%;
+        column-gap: 15px;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .tutto {
+        width: 95%;
+        margin: auto;
+    }
+    .partita {
+        padding: 35px;
+    }
+    .tutto div,
+    .tutto input {
+        font-size: 35px;
+    }
+}

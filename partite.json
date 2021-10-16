@@ -12,64 +12,64 @@
         "golSquadra2": 0
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Juve",
         "squadra2": "Inter",
         "golSquadra1": -1,
         "golSquadra2": -1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Roma",
         "squadra2": "Inter",
         "golSquadra1": -1,
         "golSquadra2": -1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Verona",
         "squadra2": "Inter",
         "golSquadra1": -1,
         "golSquadra2": -1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Milan",
         "squadra2": "Inter",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Atalanta",
         "squadra2": "Inter",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Bologna",
         "squadra2": "Inter",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Spezia",
         "squadra2": "Inter",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Venezia",
         "squadra2": "Inter",
-        "golSquadra1": 1,
-        "golSquadra2": 1
+        "golSquadra1": -1,
+        "golSquadra2": -1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Napoli",
         "squadra2": "Inter",
-        "golSquadra1": 1,
-        "golSquadra2": 1
+        "golSquadra1": -1,
+        "golSquadra2": -1
     },
         {
-        "squadra1": "Lazio",
+        "squadra1": "Salernitana",
         "squadra2": "Inter",
-        "golSquadra1": 1,
-        "golSquadra2": 1
+        "golSquadra1": -1,
+        "golSquadra2": -1
     }
 ]
 

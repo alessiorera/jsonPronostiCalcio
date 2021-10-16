@@ -16,5 +16,23 @@
     "squadra2": "Ver",
     "golSquadra1": 3,
     "golSquadra2": 2
+  },
+  {
+    "squadra1": "Udi",
+    "squadra2": "Bol",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Nap",
+    "squadra2": "Tor",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Juv",
+    "squadra2": "Rom",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

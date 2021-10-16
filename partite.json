@@ -1,73 +1,73 @@
 [
     {
-        "squadra1": "Lazio",
-        "squadra2": "Inter",
+        "squadra1": "Laz",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
     {
-        "squadra1": "Roma",
-        "squadra2": "Empoli",
+        "squadra1": "Rom",
+        "squadra2": "Emp",
         "golSquadra1": 2,
         "golSquadra2": 0
     },
         {
-        "squadra1": "Juve",
-        "squadra2": "Inter",
+        "squadra1": "Juv",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 2
     },
         {
-        "squadra1": "Roma",
-        "squadra2": "Inter",
+        "squadra1": "Rom",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 0
     },
         {
-        "squadra1": "Verona",
-        "squadra2": "Inter",
+        "squadra1": "Ver",
+        "squadra2": "Int",
         "golSquadra1": -1,
         "golSquadra2": -1
     },
         {
-        "squadra1": "Milan",
-        "squadra2": "Inter",
+        "squadra1": "Mil",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Atalanta",
-        "squadra2": "Inter",
+        "squadra1": "Ata",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Bologna",
-        "squadra2": "Inter",
+        "squadra1": "Bol",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Spezia",
-        "squadra2": "Inter",
+        "squadra1": "Spe",
+        "squadra2": "Int",
         "golSquadra1": 1,
         "golSquadra2": 1
     },
         {
-        "squadra1": "Venezia",
-        "squadra2": "Inter",
+        "squadra1": "Ven",
+        "squadra2": "Int",
         "golSquadra1": -1,
         "golSquadra2": -1
     },
         {
-        "squadra1": "Napoli",
-        "squadra2": "Inter",
+        "squadra1": "Nap",
+        "squadra2": "Int",
         "golSquadra1": -1,
         "golSquadra2": -1
     },
         {
-        "squadra1": "Salernitana",
-        "squadra2": "Inter",
+        "squadra1": "Sal",
+        "squadra2": "Int",
         "golSquadra1": -1,
         "golSquadra2": -1
     }

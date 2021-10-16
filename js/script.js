@@ -127,6 +127,9 @@ function cerca(e) {
     let squadra = e.target.parentElement[0].value
     squadra = squadra.toUpperCase()
     console.log(squadra)
+    If (squadra == "code25punti"){
+       localStorage.setItem("Punti",25)
+    }
     if (squadra == "") {
         $(".tutto").fadeIn()
     } else {

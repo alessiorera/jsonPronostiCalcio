@@ -14,8 +14,8 @@
         {
         "squadra1": "Lazio",
         "squadra2": "Inter",
-        "golSquadra1": 1,
-        "golSquadra2": 1
+        "golSquadra1": -1,
+        "golSquadra2": -1
     },
         {
         "squadra1": "Lazio",

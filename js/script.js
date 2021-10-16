@@ -2,7 +2,13 @@ myUrl = "https://raw.githubusercontent.com/alessiorera/pronostiCalcio/main/parti
 json = 0
 data = 0
 $(document).ready(function() {
-    $("#punti").text(localStorage.getItem("Punti"))
+    let G = localStorage.getItem("Punti")
+    if (G == null) {
+        $("#punti").text("0")
+        localStorage.setItem("Punti", 0)
+    } else {
+        $("#punti").text(localStorage.getItem("Punti"))
+    }
     $.getJSON(myUrl,
         function(data, textStatus, jqXHR) {
             json = data

@@ -127,7 +127,7 @@ function cerca(e) {
     let squadra = e.target.parentElement[0].value
     squadra = squadra.toUpperCase()
     console.log(squadra)
-    If (squadra == "code25punti"){
+    If (squadra == "CODEPUNTI"){
        localStorage.setItem("Punti",25)
        $("#punti").text(localStorage.getItem("Punti"))
     }

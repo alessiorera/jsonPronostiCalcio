@@ -1,75 +1,20 @@
 [
-    {
-        "squadra1": "Laz",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 1
-    },
-    {
-        "squadra1": "Rom",
-        "squadra2": "Emp",
-        "golSquadra1": 2,
-        "golSquadra2": 0
-    },
-        {
-        "squadra1": "Juv",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 2
-    },
-        {
-        "squadra1": "Rom",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 0
-    },
-        {
-        "squadra1": "Ver",
-        "squadra2": "Int",
-        "golSquadra1": -1,
-        "golSquadra2": -1
-    },
-        {
-        "squadra1": "Mil",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 1
-    },
-        {
-        "squadra1": "Ata",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 1
-    },
-        {
-        "squadra1": "Bol",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 1
-    },
-        {
-        "squadra1": "Spe",
-        "squadra2": "Int",
-        "golSquadra1": 1,
-        "golSquadra2": 1
-    },
-        {
-        "squadra1": "Ven",
-        "squadra2": "Int",
-        "golSquadra1": -1,
-        "golSquadra2": -1
-    },
-        {
-        "squadra1": "Nap",
-        "squadra2": "Int",
-        "golSquadra1": -1,
-        "golSquadra2": -1
-    },
-        {
-        "squadra1": "Sal",
-        "squadra2": "Int",
-        "golSquadra1": -1,
-        "golSquadra2": -1
-    }
+  {
+    "squadra1": "Spe",
+    "squadra2": "Sal",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Laz",
+    "squadra2": "Int",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Mil",
+    "squadra2": "Ver",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  }
 ]
-

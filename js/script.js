@@ -125,6 +125,7 @@ function verificaPunti(div, i, squadra1, squadra2, golSquadra1, golSquadra2) {
 
 function cerca(e) {
     let squadra = e.target.parentElement[0].value
+    squadra = squadra.toUpperCase()
     console.log(squadra)
     if (squadra == "") {
         $(".tutto").fadeIn()
@@ -133,7 +134,7 @@ function cerca(e) {
         $.each($(".tutto"), function(index, value) {
             console.log(value.id)
                 // console.log(value.children[0].children[0].textContent)
-            if (value.children[0].children[0].textContent == squadra || value.children[0].children[2].textContent == squadra) {
+            if (value.children[0].children[0].textContent.toUpperCase() == squadra || value.children[0].children[2].textContent.toUpperCase() == squadra) {
                 $(`#${value.id}`).fadeIn()
             }
         });

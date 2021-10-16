@@ -4,7 +4,7 @@ data = 0
 rifare = 0
 $(document).ready(function() {
     let G = localStorage.getItem("Punti")
-    if (G == null || G == NaN) {
+    if (G == null || G == 'NaN') {
         $("#punti").text("0")
         localStorage.setItem("Punti", 0)
         rifare = 1

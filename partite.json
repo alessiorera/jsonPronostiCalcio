@@ -32,7 +32,7 @@
   {
     "squadra1": "Juv",
     "squadra2": "Rom",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 0
   }
 ]

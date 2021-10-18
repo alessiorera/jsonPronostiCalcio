@@ -34,5 +34,23 @@
     "squadra2": "Rom",
     "golSquadra1": 1,
     "golSquadra2": 0
+  },
+  {
+    "squadra1": "Atl",
+    "squadra2": "Liv",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Por",
+    "squadra2": "Mil",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Int",
+    "squadra2": "She",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

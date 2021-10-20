@@ -38,19 +38,19 @@
   {
     "squadra1": "Atl",
     "squadra2": "Liv",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 3
   },
   {
     "squadra1": "Por",
     "squadra2": "Mil",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 0
   },
   {
     "squadra1": "Int",
     "squadra2": "She",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 3,
+    "golSquadra2": 1
   }
 ]

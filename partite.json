@@ -58,5 +58,29 @@
     "squadra2": "Gen",
     "golSquadra1": 3,
     "golSquadra2": 2
+  },
+  {
+    "squadra1": "Rom",
+    "squadra2": "Nap",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Juv",
+    "squadra2": "Int",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Utd",
+    "squadra2": "Liv",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Bar",
+    "squadra2": "Mdr",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

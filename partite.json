@@ -88,5 +88,23 @@
     "squadra2": "Tor",
     "golSquadra1": -1,
     "golSquadra2": -1
+  },
+  {
+    "squadra1": "Juv",
+    "squadra2": "Sas",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Cag",
+    "squadra2": "Rom",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Nap",
+    "squadra2": "Bol",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

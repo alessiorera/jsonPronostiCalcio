@@ -86,8 +86,8 @@
   {
     "squadra1": "Mil",
     "squadra2": "Tor",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 0
   },
   {
     "squadra1": "Juv",

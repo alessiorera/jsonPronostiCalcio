@@ -98,8 +98,8 @@
   {
     "squadra1": "Cag",
     "squadra2": "Rom",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 2
   },
   {
     "squadra1": "Nap",

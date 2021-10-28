@@ -5,9 +5,47 @@ body {
     font-family: "PT Sans", sans-serif!important;
 }
 
+.navbar-toggler:focus {
+    outline: 1px solid rgb(0, 255, 119, 0.712);
+}
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+}
+
+input[type=checkbox],
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+.dropdown .btn-secondary {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid rgba(0, 255, 119, 0.712);
+}
+
+.dropdown .btn-secondary:focus,
+.dropdown .btn-secondary:active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    margin-top: 10px;
+    background-color: rgba(0, 255, 119, 0.712);
+    color: black;
+    border: 2px solid rgba(0, 255, 119, 0.712);
+    outline: none;
+}
+
+.dropdown-item:focus {
+    background-color: white;
+    color: black;
+    font-weight: bold;
 }
 
 

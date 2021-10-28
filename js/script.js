@@ -168,6 +168,7 @@ function nasc(e) {
         console.log("Nascondo le partite pronosticate")
         if ($("#nascPron")[0].checked == true) {
             $("#nascPron")[0].checked = false
+            $(".tutto").fadeIn()
         } else {
             $("#nascPron")[0].checked = true
                 // MOSTRA partite pronosticate
@@ -215,8 +216,13 @@ function mostraPronostici(e) {
         $.each($(".tutto"), function(i, match) {
             ris1 = match.children[0].children[1].children[0]
             ris2 = match.children[0].children[1].children[2]
-            ris1.value = json[i].golSquadra1
-            ris2.value = json[i].golSquadra2
+            if (json[i].golSquadra1 == -1) {
+                ris1.value = 0
+                ris2.value = 0
+            } else {
+                ris1.value = json[i].golSquadra1
+                ris2.value = json[i].golSquadra2
+            }
         });
     }
 

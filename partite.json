@@ -104,7 +104,7 @@
   {
     "squadra1": "Nap",
     "squadra2": "Bol",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 3,
+    "golSquadra2": 0
   }
 ]

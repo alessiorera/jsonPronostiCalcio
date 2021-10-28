@@ -216,10 +216,7 @@ function mostraPronostici(e) {
         $.each($(".tutto"), function(i, match) {
             ris1 = match.children[0].children[1].children[0]
             ris2 = match.children[0].children[1].children[2]
-            if (json[i].golSquadra1 == -1) {
-                ris1.value = 0
-                ris2.value = 0
-            } else {
+            if (json[i].golSquadra1 != -1) {
                 ris1.value = json[i].golSquadra1
                 ris2.value = json[i].golSquadra2
             }

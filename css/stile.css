@@ -7,6 +7,7 @@ body {
 
 .navbar-toggler:focus {
     outline: 1px solid rgb(0, 255, 119, 0.712);
+    border-radius:5px;
 }
 
 input[type=number]::-webkit-inner-spin-button,

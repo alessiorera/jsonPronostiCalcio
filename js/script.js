@@ -2,6 +2,7 @@ myUrl = "https://raw.githubusercontent.com/alessiorera/pronostiCalcio/main/parti
 json = 0
 data = 0
 rifare = 0
+flagPronostici = 0
 $(document).ready(function() {
     let G = localStorage.getItem("Punti")
     if (G == null || G == 'NaN') {
@@ -182,4 +183,41 @@ function nasc(e) {
             });
         }
     }
+}
+
+function mostraPronostici(e) {
+    if (flagPronostici == 0) {
+        alert("Ecco i tuoi pronostici")
+        flagPronostici = 1
+        $.each($(".gol"), function(i, gol) {
+            part = gol.parentElement.parentElement
+            sq1 = part.children[0].textContent
+            sq2 = part.children[2].textContent
+                // console.log(part, gol, sq1, sq2)
+                // console.log(`${sq1}-${sq2}`)
+            val = localStorage.getItem(`${sq1}-${sq2}`)
+                // console.log(val)
+            if (val == null) {
+                $(part.parentElement).fadeOut()
+            } else {
+                g1 = val.split("-")[0]
+                g2 = val.split("-")[1]
+                gol.parentElement.children[0].value = g1
+                gol.parentElement.children[2].value = g2
+            }
+        });
+    } else {
+        alert("Ecco i risultati reali")
+        $(".tutto").fadeIn()
+            //REIMPOSTA RISULTATI REALI
+        flagPronostici = 0
+            // console.log(json)
+        $.each($(".tutto"), function(i, match) {
+            ris1 = match.children[0].children[1].children[0]
+            ris2 = match.children[0].children[1].children[2]
+            ris1.value = json[i].golSquadra1
+            ris2.value = json[i].golSquadra2
+        });
+    }
+
 }

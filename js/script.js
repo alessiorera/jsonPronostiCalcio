@@ -85,6 +85,8 @@ function pronosticaMatch(e) {
     alert(`${squadra1}-${squadra2} pronosticato!`)
     $(e.target).prop("disabled", true)
     localStorage.setItem(e.target.id, "disabled")
+    console.log(e.target)
+    $(e.target).prop("title", "Partita già pronosticata")
 }
 
 function verificaPunti(div, i, squadra1, squadra2, golSquadra1, golSquadra2) {
@@ -138,5 +140,46 @@ function cerca(e) {
                 $(`#${value.id}`).fadeIn()
             }
         });
+    }
+}
+
+function nasc(e) {
+
+    nome = e.target.attributes.name.value
+    console.log(nome)
+    if (nome == "nascondiMatches") {
+        console.log("Nascondo le partite concluse")
+        if ($("#nascPart")[0].checked == true) {
+            $("#nascPart")[0].checked = false
+            $(".tutto").fadeIn()
+        } else {
+            $("#nascPart")[0].checked = true
+                // MOSTRA partite finite
+            $(".tutto").fadeOut()
+            $.each($("#matches .partita"), function(i, partita) {
+                color = $(partita).css("background-color")
+                if (color != "rgba(255, 255, 255, 0.714)") {
+                    $($(partita)[0].parentElement).fadeIn()
+                }
+            });
+        }
+    } else {
+        console.log("Nascondo le partite pronosticate")
+        if ($("#nascPron")[0].checked == true) {
+            $("#nascPron")[0].checked = false
+        } else {
+            $("#nascPron")[0].checked = true
+                // MOSTRA partite pronosticate
+            $(".tutto").fadeOut()
+            $.each($(".tutto"), function(i, partita) {
+                part = $(partita)[0]
+                tit = part.children[1].children[0].title
+                console.log(tit)
+                if (tit != "Partita già pronosticata e giocata" && tit != "Partita già pronosticata") {
+                    $(partita).fadeIn()
+                }
+
+            });
+        }
     }
 }

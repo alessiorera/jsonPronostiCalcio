@@ -1,3 +1,4 @@
+
 [
   {
     "squadra1": "Spe",
@@ -106,5 +107,29 @@
     "squadra2": "Bol",
     "golSquadra1": 3,
     "golSquadra2": 0
+  },
+  {
+    "squadra1": "Ata",
+    "squadra2": "Laz",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Ver",
+    "squadra2": "Juv",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Rom",
+    "squadra2": "Mil",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Sal",
+    "squadra2": "Nap",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

@@ -15,6 +15,7 @@ $(document).ready(function() {
     $.getJSON(myUrl,
         function(data, textStatus, jqXHR) {
             json = data
+            $("#puntiReal")[0].textContent = data.length * 15
             let divTutto
             let divPartita
             let divSquadra1

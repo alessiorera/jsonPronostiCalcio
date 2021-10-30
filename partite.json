@@ -111,14 +111,14 @@
   {
     "squadra1": "Ata",
     "squadra2": "Laz",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 2
   },
   {
     "squadra1": "Ver",
     "squadra2": "Juv",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 1
   },
   {
     "squadra1": "Rom",

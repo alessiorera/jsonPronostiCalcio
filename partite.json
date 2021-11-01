@@ -123,13 +123,13 @@
   {
     "squadra1": "Rom",
     "squadra2": "Mil",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 2
   },
   {
     "squadra1": "Sal",
     "squadra2": "Nap",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 0,
+    "golSquadra2": 1
   }
 ]

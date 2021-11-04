@@ -152,31 +152,31 @@
   {
     "squadra1": "Liv",
     "squadra2": "Atl",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 0
   },
   {
     "squadra1": "Lip",
     "squadra2": "Psg",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 2
   },
   {
     "squadra1": "Rom",
     "squadra2": "Bod",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 2
   },
   {
     "squadra1": "Leg",
     "squadra2": "Nap",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 4
   },
   {
     "squadra1": "Mar",
     "squadra2": "Laz",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 2,
+    "golSquadra2": 2
   }
 ]

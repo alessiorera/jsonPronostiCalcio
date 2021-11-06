@@ -178,5 +178,11 @@
     "squadra2": "Laz",
     "golSquadra1": 2,
     "golSquadra2": 2
+  },
+  {
+    "squadra1": "Juv",
+    "squadra2": "Fio",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

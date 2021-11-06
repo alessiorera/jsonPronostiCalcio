@@ -184,5 +184,23 @@
     "squadra2": "Fio",
     "golSquadra1": -1,
     "golSquadra2": -1
+  },
+  {
+    "squadra1": "Ven",
+    "squadra2": "Rom",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },  
+  {
+    "squadra1": "Nap",
+    "squadra2": "Ver",
+    "golSquadra1": -1,
+    "golSquadra2": -1
+  },
+  {
+    "squadra1": "Mil",
+    "squadra2": "Int",
+    "golSquadra1": -1,
+    "golSquadra2": -1
   }
 ]

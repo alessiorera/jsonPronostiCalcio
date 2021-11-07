@@ -196,16 +196,16 @@
   {
     "squadra1": "Nap",
     "squadra2": "Ver",
-    "golSquadra1": -1,
-    "golSquadra2": -1,
+    "golSquadra1": 1,
+    "golSquadra2": 1,
     "data":"2021/11/07",
     "ora":"18:00"
   },
   {
     "squadra1": "Mil",
     "squadra2": "Int",
-    "golSquadra1": -1,
-    "golSquadra2": -1,
+    "golSquadra1": 1,
+    "golSquadra2": 1,
     "data":"2021/11/07",
     "ora":"20:45"
   }

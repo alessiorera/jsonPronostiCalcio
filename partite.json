@@ -182,14 +182,14 @@
   {
     "squadra1": "Juv",
     "squadra2": "Fio",
-    "golSquadra1": -1,
-    "golSquadra2": -1
+    "golSquadra1": 1,
+    "golSquadra2": 0
   },
   {
     "squadra1": "Ven",
     "squadra2": "Rom",
-    "golSquadra1": -1,
-    "golSquadra2": -1,
+    "golSquadra1": 3,
+    "golSquadra2": 2,
     "data":"2021/11/07",
     "ora":"12:30"
   },  

@@ -40,8 +40,8 @@ $(document).ready(function() {
                 trattino = $("<div class='trattino'>").append("-")
                 pronostica = $("<input type='button' value='PRONOSTICA' class='pronostica'  id=" + i + " onclick='pronosticaMatch(event)'>")
                 if (partita.golSquadra1 != -1) {
-                    gol1 = $(`<input min='0' max='9' type='number' class='gol' value='${partita.golSquadra1}'>`)
-                    gol2 = $(`<input min='0' max='9' type='number' class='gol' value='${partita.golSquadra2}'>`)
+                    gol1 = $(`<input min='0' max='9' type='number' class='gol' value='${partita.golSquadra1}' readonly=true>`)
+                    gol2 = $(`<input min='0' max='9' type='number' class='gol' value='${partita.golSquadra2}' readonly=true>`)
                     pronostica.prop("disabled", true)
                     pronostica.prop("title", "Partita già giocata")
                     pronostica.prop("value", "Partita già giocata")
@@ -56,13 +56,16 @@ $(document).ready(function() {
                 if (localStorage.getItem(i) == "disabled") {
                     pronostica.prop("disabled", true)
                     pronostica.prop("title", "Partita già pronosticata")
+                    pronostica.prop("value", "Partita già pronosticata")
                     if (partita.golSquadra1 != -1) {
                         pronostica.prop("title", "Partita già pronosticata e giocata")
                     } else {
                         n1 = localStorage.getItem(`${partita.squadra1}-${partita.squadra2}`)
                         n2 = localStorage.getItem(`${partita.squadra1}-${partita.squadra2}`)
                         gol1.prop("value", n1.split("-")[0])
+                        gol1.prop("readonly", true)
                         gol2.prop("value", n2.split("-")[1])
+                        gol2.prop("readonly", true)
                     }
                 }
                 pulsanti = $("<div class='pulsanti'>").append(pronostica)
@@ -87,6 +90,9 @@ function pronosticaMatch(e) {
     console.log(`${squadra1}-${squadra2}`, `${golSquadra1}-${golSquadra2}`)
     alert(`${squadra1}-${squadra2} pronosticato!`)
     $(e.target).prop("disabled", true)
+    $(e.target).prop("value", "Partita già pronosticata")
+    e.target.parentElement.parentElement.children[0].children[1].children[0].readOnly=true
+    e.target.parentElement.parentElement.children[0].children[1].children[2].readOnly=true
     localStorage.setItem(e.target.id, "disabled")
     console.log(e.target)
     $(e.target).prop("title", "Partita già pronosticata")

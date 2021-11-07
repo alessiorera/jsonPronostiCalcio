@@ -1,3 +1,12 @@
+var d = new Date();
+
+var month = d.getMonth()+1;
+var day = d.getDate();
+
+var giorno = d.getFullYear() + '/' +(month<10 ? '0' : '') + month + '/' +(day<10 ? '0' : '') + day;
+var ora=d.getHours() + ":" + d.getMinutes()
+
+
 myUrl = "https://raw.githubusercontent.com/alessiorera/pronostiCalcio/main/partite.json"
 json = 0
 data = 0
@@ -17,6 +26,7 @@ $(document).ready(function() {
             json = data
             $("#puntiReal")[0].textContent = data.length * 15
             let divTutto
+            let divData
             let divPartita
             let divSquadra1
             let divSquadra2
@@ -33,6 +43,12 @@ $(document).ready(function() {
                     localStorage.setItem(`${i}Contato`, false)
                 }
                 divTutto = $("<div class='tutto' id=" + i + ">")
+                divData = $("<div class='data'>")
+                if(partita.data!=undefined){
+                    divData.append($("<div>").append(partita.data),$("<div>").append(partita.ora))
+                }else{
+                    divData=$("<div>")
+                }
                 divPartita = $("<div class='partita'>")
                 divSquadra1 = $("<div class='squadra'>").append(partita.squadra1)
                 divSquadra2 = $("<div class='squadra'>").append(partita.squadra2)
@@ -71,7 +87,7 @@ $(document).ready(function() {
                 pulsanti = $("<div class='pulsanti'>").append(pronostica)
                 $(divRisultato).append(gol1, trattino, gol2)
                 $(divPartita).append(divSquadra1, divRisultato, divSquadra2)
-                $(divTutto).append(divPartita, pulsanti)
+                $(divTutto).append(divData,divPartita, pulsanti)
                 $("#matches").append(divTutto)
             });
             rifare = 0
@@ -81,21 +97,33 @@ $(document).ready(function() {
 
 function pronosticaMatch(e) {
     console.log(e.target.id)
-    let squadra1 = e.target.parentElement.parentElement.children[0].children[0].textContent
-    let squadra2 = e.target.parentElement.parentElement.children[0].children[2].textContent
-    let golSquadra1 = e.target.parentElement.parentElement.children[0].children[1].children[0].value
-    let golSquadra2 = e.target.parentElement.parentElement.children[0].children[1].children[2].value
-    console.log(`${squadra1} ${golSquadra1} - ${golSquadra2} ${squadra2}`)
-    localStorage.setItem(`${squadra1}-${squadra2}`, `${golSquadra1}-${golSquadra2}`)
-    console.log(`${squadra1}-${squadra2}`, `${golSquadra1}-${golSquadra2}`)
-    alert(`${squadra1}-${squadra2} pronosticato!`)
-    $(e.target).prop("disabled", true)
-    $(e.target).prop("value", "Partita già pronosticata")
-    e.target.parentElement.parentElement.children[0].children[1].children[0].readOnly=true
-    e.target.parentElement.parentElement.children[0].children[1].children[2].readOnly=true
-    localStorage.setItem(e.target.id, "disabled")
-    console.log(e.target)
-    $(e.target).prop("title", "Partita già pronosticata")
+    iniz=0
+    let dat=e.target.parentElement.parentElement.children[0].children[0].textContent
+    let or=e.target.parentElement.parentElement.children[0].children[1].textContent
+    if(dat==giorno){
+        // alert(dat)
+        if(or<ora){
+            alert("Partita già iniziata")
+            iniz=1
+        }
+    }
+    if(iniz==0){
+        let squadra1 = e.target.parentElement.parentElement.children[1].children[0].textContent
+        let squadra2 = e.target.parentElement.parentElement.children[1].children[2].textContent
+        let golSquadra1 = e.target.parentElement.parentElement.children[1].children[1].children[0].value
+        let golSquadra2 = e.target.parentElement.parentElement.children[1].children[1].children[2].value
+        console.log(`${squadra1} ${golSquadra1} - ${golSquadra2} ${squadra2}`)
+        localStorage.setItem(`${squadra1}-${squadra2}`, `${golSquadra1}-${golSquadra2}`)
+        console.log(`${squadra1}-${squadra2}`, `${golSquadra1}-${golSquadra2}`)
+        alert(`${squadra1}-${squadra2} pronosticato!`)
+        $(e.target).prop("disabled", true)
+        $(e.target).prop("value", "Partita già pronosticata")
+        e.target.parentElement.parentElement.children[1].children[1].children[0].readOnly=true
+        e.target.parentElement.parentElement.children[1].children[1].children[2].readOnly=true
+        localStorage.setItem(e.target.id, "disabled")
+        console.log(e.target)
+        $(e.target).prop("title", "Partita già pronosticata")
+    }
 }
 
 function verificaPunti(div, i, squadra1, squadra2, golSquadra1, golSquadra2) {
@@ -144,8 +172,8 @@ function cerca(e) {
         $(".tutto").fadeOut()
         $.each($(".tutto"), function(index, value) {
             console.log(value.id)
-                // console.log(value.children[0].children[0].textContent)
-            if (value.children[0].children[0].textContent.toUpperCase() == squadra || value.children[0].children[2].textContent.toUpperCase() == squadra) {
+            console.log(value.children[1].children[0].textContent)
+            if (value.children[1].children[0].textContent.toUpperCase() == squadra || value.children[1].children[2].textContent.toUpperCase() == squadra) {
                 $(`#${value.id}`).fadeIn()
             }
         });

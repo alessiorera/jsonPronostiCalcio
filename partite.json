@@ -190,23 +190,63 @@
     "squadra2": "Rom",
     "golSquadra1": 3,
     "golSquadra2": 2,
-    "data":"2021/11/07",
-    "ora":"12:30"
-  },  
+    "data": "2021/11/07",
+    "ora": "12:30"
+  },
   {
     "squadra1": "Nap",
     "squadra2": "Ver",
     "golSquadra1": 1,
     "golSquadra2": 1,
-    "data":"2021/11/07",
-    "ora":"18:00"
+    "data": "2021/11/07",
+    "ora": "18:00"
   },
   {
     "squadra1": "Mil",
     "squadra2": "Int",
     "golSquadra1": 1,
     "golSquadra2": 1,
-    "data":"2021/11/07",
-    "ora":"20:45"
+    "data": "2021/11/07",
+    "ora": "20:45"
+  },
+  {
+    "squadra1": "Laz",
+    "squadra2": "Juv",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/20",
+    "ora": "15:00"
+  },
+  {
+    "squadra1": "Fio",
+    "squadra2": "Mil",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/20",
+    "ora": "20:45"
+  },
+  {
+    "squadra1": "Lei",
+    "squadra2": "Che",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/20",
+    "ora": "13:30"
+  },
+  {
+    "squadra1": "Int",
+    "squadra2": "Nap",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/21",
+    "ora": "18:00"
+  },
+  {
+    "squadra1": "Gen",
+    "squadra2": "Rom",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/21",
+    "ora": "20:45"
   }
 ]

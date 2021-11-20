@@ -210,6 +210,14 @@
     "ora": "20:45"
   },
   {
+    "squadra1": "Lei",
+    "squadra2": "Che",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/20",
+    "ora": "13:30"
+  },
+  {
     "squadra1": "Laz",
     "squadra2": "Juv",
     "golSquadra1": -1,
@@ -224,14 +232,6 @@
     "golSquadra2": -1,
     "data": "2021/11/20",
     "ora": "20:45"
-  },
-  {
-    "squadra1": "Lei",
-    "squadra2": "Che",
-    "golSquadra1": -1,
-    "golSquadra2": -1,
-    "data": "2021/11/20",
-    "ora": "13:30"
   },
   {
     "squadra1": "Int",

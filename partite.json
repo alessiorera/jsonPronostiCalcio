@@ -248,5 +248,37 @@
     "golSquadra2": 2,
     "data": "2021/11/21",
     "ora": "20:45"
+  },
+  {
+    "squadra1": "Int",
+    "squadra2": "Shk",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/24",
+    "ora": "18:45"
+  },
+  {
+    "squadra1": "Atl",
+    "squadra2": "Mil",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/24",
+    "ora": "21:00"
+  },
+  {
+    "squadra1": "Man",
+    "squadra2": "Psg",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/24",
+    "ora": "21:00"
+  },
+  {
+    "squadra1": "Liv",
+    "squadra2": "Por",
+    "golSquadra1": -1,
+    "golSquadra2": -1,
+    "data": "2021/11/24",
+    "ora": "21:00"
   }
 ]
